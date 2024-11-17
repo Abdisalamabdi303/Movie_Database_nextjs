@@ -1,5 +1,4 @@
 import Results from '@/components/Results';
-import { Suspense } from 'react';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
@@ -18,8 +17,8 @@ export default async function Home({ searchParams }) {
   const results = data.results;
 
   return (
-    <Suspense>
+    <div>
       <Results results={results} />
-    </Suspense>
+    </div>
   );
 }
