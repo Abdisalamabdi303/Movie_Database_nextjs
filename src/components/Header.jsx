@@ -13,7 +13,7 @@ export default function Header() {
         </div>
         <div className='flex items-center gap-4'>
             <DarkMode/>
-            <Link href='/' className='flex gap-1 items-center'>
+            <Link href={'/'} className='flex gap-1 items-center'>
                 <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg">IMDB</span>
                 <span className='text-xl font-semibold hidden sm:inline'>Clone</span>
             </Link>
