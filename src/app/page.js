@@ -1,3 +1,4 @@
+'use client'
 import Results from '@/components/Results';
 import { useSearchParams } from 'next/navigation'
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
