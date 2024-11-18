@@ -3,7 +3,7 @@ import Results from '@/components/Results';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
-export default async function Home({searchParams) {
+export default async function Home({searchParams}) {
 
 const genre = searchParams.get('genre')
   const res = await fetch(
