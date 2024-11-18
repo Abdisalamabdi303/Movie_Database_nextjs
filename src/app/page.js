@@ -2,10 +2,10 @@
 import Results from '@/components/Results';
 import { useSearchParams } from 'next/navigation'
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-
+const searchParams= useSearchParams()
+const genre = searchParams.get('genre')
 export default async function Home() {
-  const searchParams= useSearchParams()
-  const genre = searchParams.get('genre')
+ 
   const res = await fetch(
     `https://api.themoviedb.org/3${
       genre === 'fetchTopRated' ? `/movie/top_rated` : `/trending/all/week`
